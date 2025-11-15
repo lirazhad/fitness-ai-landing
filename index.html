@@ -3,81 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fits-You – Download</title>
+  <title>Fits-You – AI Fitness & Nutrition</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
-      color: #1a1a1a;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
+    /* Reset and basic styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6f8; color: #1a1a1a; }
+
+    /* Center container */
     .container {
-      background: #ffffff;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
       max-width: 600px;
-      width: 90%;
+      margin: 60px auto;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 40px 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
       text-align: center;
     }
+
+    /* Logo */
+    .logo {
+      width: 120px;
+      height: auto;
+      margin-bottom: 25px;
+    }
+
     h1 {
-      margin: 0 0 10px;
       font-size: 32px;
+      margin-bottom: 15px;
       font-weight: 700;
     }
-    p {
+
+    p.description {
       font-size: 16px;
-      margin: 10px 0 30px;
-      color: #444;
+      color: #555;
+      margin-bottom: 30px;
+      line-height: 1.5;
     }
-    .buttons {
+
+    /* Store buttons */
+    .store-buttons {
       display: flex;
-      flex-direction: column;
-      gap: 15px;
-      width: 100%;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
     }
-    a.store-button {
-      display: block;
-      padding: 14px;
+
+    .store-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
       text-decoration: none;
-      font-size: 18px;
-      border-radius: 10px;
       font-weight: 600;
+      font-size: 16px;
+      border-radius: 12px;
+      color: #fff;
       transition: 0.2s ease;
+      min-width: 150px;
     }
-    a.ios {
-      background: #000000;
-      color: #ffffff;
+
+    .store-button img {
+      height: 24px;
+      margin-right: 10px;
     }
-    a.android {
-      background: #3ddc84;
-      color: #ffffff;
-    }
-    a.store-button:hover {
-      opacity: 0.8;
-    }
+
+    .ios { background: #000; }
+    .android { background: #3ddc84; }
+
+    .store-button:hover { opacity: 0.85; }
+
+    /* Footer */
     .footer {
-      margin-top: 25px;
       font-size: 14px;
-      color: #777;
+      color: #999;
+      margin-top: 30px;
+    }
+
+    /* Responsive */
+    @media(max-width: 480px){
+      h1 { font-size: 28px; }
+      .description { font-size: 15px; }
+      .store-button { min-width: 120px; font-size: 14px; padding: 10px; }
     }
   </style>
 </head>
 <body>
+
   <div class="container">
+    <!-- Logo -->
+    <img src="LOGO_URL_HERE" alt="Fits-You Logo" class="logo">
+
+    <!-- Title -->
     <h1>Fits-You</h1>
-    <p>Your AI-powered fitness and nutrition companion. Download the app below:</p>
-    
-    <div class="buttons">
-      <a class="store-button ios" href="YOUR_IOS_LINK_HERE" target="_blank">Download on iOS</a>
-      <a class="store-button android" href="YOUR_ANDROID_LINK_HERE" target="_blank">Download on Android</a>
+
+    <!-- Short Description -->
+    <p class="description">
+      Your AI-powered fitness and nutrition companion. Get personalized workout plans, meal plans, step tracking, and food photo analysis.
+    </p>
+
+    <!-- Store Buttons -->
+    <div class="store-buttons">
+      <a href="YOUR_IOS_LINK_HERE" target="_blank" class="store-button ios">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/App_Store_logo.svg" alt="iOS">
+        Download on iOS
+      </a>
+      <a href="YOUR_ANDROID_LINK_HERE" target="_blank" class="store-button android">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Android">
+        Download on Android
+      </a>
     </div>
 
     <div class="footer">© 2025 Fits-You</div>
   </div>
+
 </body>
 </html>
